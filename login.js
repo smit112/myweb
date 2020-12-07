@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({extended : true}));
 app.use(bodyParser.json());
 
 app.get('/', function(request, response) {
-	response.sendFile(path.join(__dirname + '/web.html'));
+	response.sendFile(path.join(myweb + '/web.html'));
 });
 
 app.post('/auth', function(request, response) {
